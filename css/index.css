@@ -2,6 +2,7 @@ body {
 	padding: 0; 
 	margin: 0; 
 	background-color: rgb(255, 255, 255);
+  padding-top: 50px;
 } 
 
 /* h1, h2, h3, h4, h5{
@@ -66,7 +67,6 @@ img{
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -84,4 +84,39 @@ img{
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32rem;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
